@@ -5,7 +5,9 @@ let start = false;
 
 
 function startclick(start){
-	document.getElementsByClassName("myButton")[0].style.display = "none"
+	document.getElementsByClassName("myButton")[0].style.display = "none";
+	document.getElementsByClassName("items")[0].classList.toggle("startitems");
+	document.getElementById("tetris").style.margin = "0"
     start = true;
     if (start == true){
     
