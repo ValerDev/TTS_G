@@ -5,11 +5,21 @@
 	</head>
 	<body>
         
-        <input type='button' class='myButton' onclick='startclick()'  value="Start game">
-        
+		
 		<link href="style.css" rel="stylesheet" type="text/css"> 
 		<canvas id='tetris' width="240" height="400"></canvas>
 		<div id = 'score' ></div>
+		<div  class='myButton' onclick='startclick()'> 
+			<span>START GAME</span>
+		</div>
+		<div>
+			<img src="top.svg"  id="top"  class="controlItem">	
+			<div>
+				<img src="left.svg" id="left" class="controlItem">	
+				<img src="right.svg" id="right" class="controlItem">	
+			</div>
+			<img src="bottom.svg" id="bottom" class="controlItem">	
+		</div>
 	   
 		
 		

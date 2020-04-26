@@ -1,35 +1,63 @@
 body{
 	
-	background: #44c767;
+	background: #757575;
 	color: #fff;
 	font-family: sans-serif;
 	font-size: 2em;
 	text-align: center;
 }
 #tetris {
-    box-shadow: 0px 4px 43px 2px #37C39D;
+	border-radius: 16px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 	height: 568px;
-    border: solid .2em #fff;
 }
 .myButton{
-    margin-left: -200px;
-    background-color:#3765b3;
-	-moz-border-radius:28px;
-	-webkit-border-radius:28px;
-	border-radius:28px;
-	border:1px solid #ab1919;
-    color:#ffffff;
-	font-family:Impact;
-	font-size:28px;
-	padding:16px 31px;
-	text-decoration:none;
-	text-shadow:6px -4px 3px #482866;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	border-radius: 16px;
+	background-color: #6200EE;
+	width: 200px;
+	height: 70px;
+	margin: 25px auto;
 }
 .myButton:hover {
-	background-color:#2e2abd;
+	background-color:#3700b3;
 }
 .myButton:active {
 	position:relative;
 	top:2px;
 }
 
+@media (min-width: 600px) and (max-width: 1500px){
+	#tetris {
+		margin-top: 20px;	
+		border-radius: 16px;
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+		height: 1400px!important;
+	}
+	.myButton{
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+		border-radius: 16px;
+		background-color: #6200EE;
+	}
+	.myButton:hover {
+		background-color:#3700b3;
+	}
+	.myButton:active {
+		position:relative;
+		top:2px;
+	}
+	.controlItem{
+		margin-top: 10px;
+		width: 150px;
+	}
+	#score{
+		margin: 60px;
+	}
+	#left{
+		margin-right: 200px;
+	}
+	#right{
+		margin-left: 200px;
+	}
+
+}

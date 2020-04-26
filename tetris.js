@@ -5,6 +5,7 @@ let start = false;
 
 
 function startclick(start){
+	document.getElementsByClassName("myButton")[0].style.display = "none"
     start = true;
     if (start == true){
     
@@ -242,12 +243,30 @@ document.addEventListener('keydown',event => {
 	
 });
 
+document.getElementById("left").onclick = () => {
+	playerMove( - 1)
+
+}
+document.getElementById("right").onclick = () => {
+	playerMove(1)
+
+}
+document.getElementById("bottom").onclick = () => {
+	playerDrop()
+
+}
+document.getElementById("top").onclick = () => {
+	playerRotate(1)
+
+}
+
 playerReset();
 updateScore();
 update();
 	
         }
 }
+
 
 
 
